@@ -76,7 +76,7 @@ fun LoadingScreen(modifier: Modifier = Modifier) {
         contentAlignment = Alignment.Center
     ) {
         CircularProgressIndicator(
-            modifier = Modifier.width(dimensionResource(R.dimen.image_size)),
+            modifier = Modifier.width(dimensionResource(R.dimen.progress_bar_size)),
             color = MaterialTheme.colorScheme.secondary,
             trackColor = MaterialTheme.colorScheme.surfaceVariant,
         )
@@ -171,7 +171,7 @@ fun ProductCard(product: Product, modifier: Modifier = Modifier) {
                 )
                 Text(
                     text = "${product.price}",
-                    style = MaterialTheme.typography.bodyLarge
+                    style = MaterialTheme.typography.headlineMedium
                 )
             }
         }
